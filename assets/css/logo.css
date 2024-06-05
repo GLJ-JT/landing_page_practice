@@ -1,0 +1,26 @@
+
+
+.logo {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+}
+
+.square {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 6px solid white;
+    background-color: transparent;
+}
+
+.square1 {
+    top: -10px;
+    left: -10px;
+}
+
+.square2 {
+    top: -4px;
+    left: -px;
+}

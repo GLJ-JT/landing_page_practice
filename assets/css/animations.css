@@ -1,0 +1,43 @@
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(25%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+.fadeInUp-animation {
+    animation: 1.5s fadeInUp;
+  }
+
+.card-wrapper {
+    opacity: 0;
+    /*transform: translateY(0px);*/
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    
+}
+
+.card-wrapper.visible {
+    opacity: 1;
+    /*transform: translateY(0);*/
+}
+
+/* @keyframes bg-color-change {
+  0% {
+      background-color: #4d2a91;
+      
+  }
+
+  100% {
+      background-color: #250d54;
+      
+}
+
+body {
+  animation: bg-color-change 20s linear forwards;
+  animation-play-state: paused;
+} */
+
