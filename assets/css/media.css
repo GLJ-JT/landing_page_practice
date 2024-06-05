@@ -1,0 +1,43 @@
+/* moving logos styles */
+
+.item-container {
+    
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.item-track {
+    display: flex;
+    animation: moveItems;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.item {
+    width: 150px;
+    height: 60px;
+    border: white 0.15em solid;
+    border-radius: 10px;
+    margin: 0 30px;
+
+}
+
+@keyframes moveItems {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* parallax scroll*/
+
+.floater { }
+
+
