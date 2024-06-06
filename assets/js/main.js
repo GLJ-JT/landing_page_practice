@@ -76,6 +76,15 @@ document.addEventListener("DOMContentLoaded", () => {
         requestAnimationFrame(updateDots);
     }
 
+    //banner text wrapper fade out
+    document.addEventListener('scroll', () => {
+        const banner = document.querySelector('.banner-wrapper');
+        const maxScroll = 300; // Maximum scroll distance for the effect
+        const scrollY = window.scrollY;
+        const opacity = Math.max(1 - scrollY / maxScroll, 0);
+        banner.style.opacity = opacity;
+    });
+
     updateDots();
 
     //responsive on scroll side bar
