@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web3 Service Agency</title>
+    <title>Landing page by JT</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/shapes.css">
     <link rel="stylesheet" href="assets/css/logo.css">
     <link rel="stylesheet" href="assets/css/dot cursor/dot-cursor.css">
+    <link rel="stylesheet" href="assets/css/FAQ.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -52,12 +53,12 @@
         </div>
         <div class="hero_overlay"></div>
         <div class="hero-content">
-            <div style="z-index: 1;">
-            <div class="fadeInUp-animation">
-                <div class="headline">Unlock the Potential of Web3</div>
-                <div class="subheadline">Innovative blockchain solutions for your business</div>
-                <button class="cta-button">Explore Services</button>
-            </div>
+            <div class="banner-wrapper" style="z-index: 1;">
+                <div class="fadeInUp-animation">
+                    <div class="headline">Unlock the Potential of Web3</div>
+                    <div class="subheadline">Innovative blockchain solutions for your business</div>
+                    <button class="cta-button">Explore Services</button>
+                </div>
             </div>
             <div class="eth-card">
                 <div class="landing-container">
@@ -246,393 +247,444 @@
 
     <!-- Content Section -->
     <section style="width: fill-content; background-color: rgb(27, 32, 48);">
-    <section class="main-content" style="color: white; background-color: rgb(27, 32, 48);">
-        <nav>
-            <ul class="sidebar-navigation">
-                <li id="1"><a href="#services">Our Services</a></li>
-                <li id="2"><a href="#who-we-are">Who We Are</a></li>
-                <li id="3"><a href="#work">Our Work</a></li>
-                <li id="4"><a href="#insight">Insights & Resources</a></li>
-            </ul>
-        </nav>
+        <section class="main-content" style="color: white; background-color: rgb(27, 32, 48);margin-bottom: 25vh;">
+            <nav>
+                <ul class="sidebar-navigation">
+                    <li id="1"><a href="#services">Our Services</a></li>
+                    <li id="2"><a href="#who-we-are">Who We Are</a></li>
+                    <li id="3"><a href="#work">Our Work</a></li>
+                    <li id="4"><a href="#insight">Insights & Resources</a></li>
+                </ul>
+            </nav>
 
-        <section class="content-section">
+            <section class="content-section">
 
-            <div id="services" class="services container card-wrapper" style="margin:0 0;">
-                <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                    <h2>Our Services</h2>
+                <div id="services" class="services container card-wrapper" style="margin:0 0;">
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <h2>Our Services</h2>
 
-                    <div id="slider-container"></div>
-                    <script src="assets/js/sliderUI.js"></script>
-                </div>
+                        <div id="slider-container"></div>
+                        <script src="assets/js/sliderUI.js"></script>
+                    </div>
 
-                <div class="slider">
+                    <div class="slider">
 
-                    <div class="card-container">
-                        <div class="swiper-animation-top" style="min-width: 50%">
-                            <div class="service-card">
-                                <div class="image"
-                                    style="display:flex; flex-direction: row; align-items: center; justify-content: space-evenly; overflow-y: hidden;">
-                                    <div style="display:list-item; position: relative;" class="floater">
-                                        <div id="circle" style="margin:20px 0;"></div>
-                                        <div id="circle" style="margin:20px 0;"></div>
-                                        <div id="circle" style="margin:20px 0;"></div>
-                                        <div id="circle" style="margin:20px 0;"></div>
+                        <div class="card-container">
+                            <div class="swiper-animation-top" style="min-width: 50%">
+                                <div class="service-card">
+                                    <div class="image"
+                                        style="display:flex; flex-direction: row; align-items: center; justify-content: space-evenly; overflow-y: hidden;">
+                                        <div style="display:list-item; position: relative;" class="floater">
+                                            <div id="circle" style="margin:20px 0;"></div>
+                                            <div id="circle" style="margin:20px 0;"></div>
+                                            <div id="circle" style="margin:20px 0;"></div>
+                                            <div id="circle" style="margin:20px 0;"></div>
+                                        </div>
+                                        <div style="display:list-item; position: relative;" class="floaterReverse">
+                                            <div id="circle" style="margin:20px 0;"></div>
+                                            <div id="circle" style="margin:20px 0;"></div>
+                                            <div id="circle" style="margin:20px 0;"></div>
+                                            <div id="circle" style="margin:20px 0;"></div>
+                                        </div>
+                                        <div style="display:list-item; position: relative;" class="floater">
+                                            <div id="circle" style="margin:20px 0;"></div>
+                                            <div id="circle" style="margin:20px 0;"></div>
+                                            <div id="circle" style="margin:20px 0;"></div>
+                                            <div id="circle" style="margin:20px 0;"></div>
+                                        </div>
                                     </div>
-                                    <div style="display:list-item; position: relative;" class="floaterReverse">
-                                        <div id="circle" style="margin:20px 0;"></div>
-                                        <div id="circle" style="margin:20px 0;"></div>
-                                        <div id="circle" style="margin:20px 0;"></div>
-                                        <div id="circle" style="margin:20px 0;"></div>
-                                    </div>
-                                    <div style="display:list-item; position: relative;" class="floater">
-                                        <div id="circle" style="margin:20px 0;"></div>
-                                        <div id="circle" style="margin:20px 0;"></div>
-                                        <div id="circle" style="margin:20px 0;"></div>
-                                        <div id="circle" style="margin:20px 0;"></div>
+                                    <h3>Blockchain Development</h3>
+                                    <div>
+                                        <p href="#" class="hyperlink">Learn More</p>
                                     </div>
                                 </div>
-                                <h3>Blockchain Development</h3>
+                            </div>
+                            <div class="swiper-animation-bottom" style="min-width: 50%">
+                                <div class="service-card">
+                                    <div class="image"
+                                        style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
+                                        <div style="display:inline-flex; position: relative;">
+                                            <div class="iphone-x floater"
+                                                style="transform: scale(0.35) translateX(150%) translateY(-10%);">
+                                                <i>Speaker</i>
+                                                <b>Camera</b>
+                                                <s>10:24</s>
+
+                                                <span>Left action button</span>
+                                                <span>Right action button</span>
+                                            </div>
+                                            <div class="iphone-x floaterReverse"
+                                                style="transform: scale(0.35) translateY(30%);">
+                                                <i>Speaker</i>
+                                                <b>Camera</b>
+                                                <s>10:24</s>
+
+                                                <span>Left action button</span>
+                                                <span>Right action button</span>
+                                            </div>
+                                            <div class="iphone-x floater"
+                                                style="transform: scale(0.35) translateX(-150%) translateY(-10%);">
+                                                <i>Speaker</i>
+                                                <b>Camera</b>
+                                                <s>10:24</s>
+
+                                                <span>Left action button</span>
+                                                <span>Right action button</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>Smart Contract Audits</h3>
+                                    <div>
+                                        <p href="#" class="hyperlink">Learn More</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="min-width: 50%">
+                                <div class="service-card">
+                                    <div class="image"
+                                        style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
+                                        <div style="display:list-item; position: relative;" class="floater">
+                                            <div class="iphone-x" style="transform: scale(0.75) translatey(30%);">
+                                                <i>Speaker</i>
+                                                <b>Camera</b>
+                                                <s>10:24</s>
+
+                                                <span>Left action button</span>
+                                                <span>Right action button</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>DApp Development</h3>
+                                    <div>
+                                        <p href="#" class="hyperlink">Learn More</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="min-width: 50%">
+                                <div class="service-card">
+                                    <div class="image"
+                                        style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
+                                        <div style="display:list-item; position: relative;" class="floater">
+                                            <div class="iphone-x" style="transform: scale(0.75) translatey(30%);">
+                                                <i>Speaker</i>
+                                                <b>Camera</b>
+                                                <s>10:24</s>
+
+                                                <span>Left action button</span>
+                                                <span>Right action button</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>DApp Development</h3>
+                                    <div>
+                                        <p href="#" class="hyperlink">Learn More</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="min-width: 50%">
+                                <div class="service-card">
+                                    <div class="image"
+                                        style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
+                                        <div style="display:list-item; position: relative;" class="floater">
+                                            <div class="iphone-x" style="transform: scale(0.75) translatey(30%);">
+                                                <i>Speaker</i>
+                                                <b>Camera</b>
+                                                <s>10:24</s>
+
+                                                <span>Left action button</span>
+                                                <span>Right action button</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>DApp Development</h3>
+                                    <div>
+                                        <p href="#" class="hyperlink">Learn More</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="min-width: 50%">
+                                <div class="service-card">
+                                    <div class="image"
+                                        style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
+                                        <div style="display:list-item; position: relative;" class="floater">
+                                            <div class="iphone-x" style="transform: scale(0.75) translatey(30%);">
+                                                <i>Speaker</i>
+                                                <b>Camera</b>
+                                                <s>10:24</s>
+
+                                                <span>Left action button</span>
+                                                <span>Right action button</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>DApp Development</h3>
+                                    <div>
+                                        <p href="#" class="hyperlink">Learn More</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="min-width: 50%">
+                                <div class="service-card">
+                                    <div class="image"
+                                        style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
+                                        <div style="display:list-item; position: relative;" class="floater">
+                                            <div class="iphone-x" style="transform: scale(0.75) translatey(30%);">
+                                                <i>Speaker</i>
+                                                <b>Camera</b>
+                                                <s>10:24</s>
+
+                                                <span>Left action button</span>
+                                                <span>Right action button</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>DApp Development</h3>
+                                    <div>
+                                        <p href="#" class="hyperlink">Learn More</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div id="who-we-are" class="about container card-wrapper" style="margin:0 0;">
+                    <h2>Who We Are</h2>
+                    <p>Brief description of the company’s mission, vision, and values.</p>
+                    <div class="card-container">
+                        <div class="swiper-animation-top" style="min-width: 50%">
+                            <div class="team-member">
+                                <div class="image"
+                                    style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
+                                    <div style="display:list-item; position: relative;" class="floater">
+                                        <div class="iphone-x" style="transform: scale(0.75) translateY(30%);">
+                                            <i>Speaker</i>
+                                            <b>Camera</b>
+                                            <s>10:24</s>
+
+                                            <span>Left action button</span>
+                                            <span>Right action button</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>John Doe</h3>
                                 <div>
-                                    <p href="#" class="hyperlink">Learn More</p>
+                                    <p href="#" class="hyperlink">CEO</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-animation-bottom" style="min-width: 50%">
-                            <div class="service-card">
+                            <div class="team-member">
                                 <div class="image"
-                                    style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
-                                    <div style="display:inline-flex; position: relative;">
-                                        <div class="iphone-x floater"
-                                            style="transform: scale(0.35) translateX(150%) translateY(-10%);">
-                                            <i>Speaker</i>
-                                            <b>Camera</b>
-                                            <s>10:24</s>
-
-                                            <span>Left action button</span>
-                                            <span>Right action button</span>
-                                        </div>
-                                        <div class="iphone-x floaterReverse"
-                                            style="transform: scale(0.35) translateY(30%);">
-                                            <i>Speaker</i>
-                                            <b>Camera</b>
-                                            <s>10:24</s>
-
-                                            <span>Left action button</span>
-                                            <span>Right action button</span>
-                                        </div>
-                                        <div class="iphone-x floater"
-                                            style="transform: scale(0.35) translateX(-150%) translateY(-10%);">
-                                            <i>Speaker</i>
-                                            <b>Camera</b>
-                                            <s>10:24</s>
-
-                                            <span>Left action button</span>
-                                            <span>Right action button</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3>Smart Contract Audits</h3>
-                                <div>
-                                    <p href="#" class="hyperlink">Learn More</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="min-width: 50%">
-                            <div class="service-card">
-                                <div class="image"
-                                    style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
+                                    style="display:flex; flex-direction: row; align-items: center; justify-content: space-evenly; overflow-y: hidden;">
                                     <div style="display:list-item; position: relative;" class="floater">
-                                        <div class="iphone-x" style="transform: scale(0.75) translatey(30%);">
-                                            <i>Speaker</i>
-                                            <b>Camera</b>
-                                            <s>10:24</s>
-
-                                            <span>Left action button</span>
-                                            <span>Right action button</span>
-                                        </div>
+                                        <div id="square" style="margin:20px 0;"></div>
+                                        <div id="square" style="margin:20px 0;"></div>
+                                        <div id="square" style="margin:20px 0;"></div>
+                                        <div id="square" style="margin:20px 0;"></div>
                                     </div>
-                                </div>
-                                <h3>DApp Development</h3>
-                                <div>
-                                    <p href="#" class="hyperlink">Learn More</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="min-width: 50%">
-                            <div class="service-card">
-                                <div class="image"
-                                    style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
+                                    <div style="display:list-item; position: relative; transform: translateY(20%);"
+                                        class="floaterReverse">
+                                        <div id="square" style="margin:20px 0;"></div>
+                                        <div id="square" style="margin:20px 0;"></div>
+                                        <div id="square" style="margin:20px 0;"></div>
+                                        <div id="square" style="margin:20px 0;"></div>
+                                    </div>
                                     <div style="display:list-item; position: relative;" class="floater">
-                                        <div class="iphone-x" style="transform: scale(0.75) translatey(30%);">
-                                            <i>Speaker</i>
-                                            <b>Camera</b>
-                                            <s>10:24</s>
-
-                                            <span>Left action button</span>
-                                            <span>Right action button</span>
-                                        </div>
+                                        <div id="square" style="margin:20px 0;"></div>
+                                        <div id="square" style="margin:20px 0;"></div>
+                                        <div id="square" style="margin:20px 0;"></div>
+                                        <div id="square" style="margin:20px 0;"></div>
                                     </div>
                                 </div>
-                                <h3>DApp Development</h3>
+                                <h3>Jane Smith</h3>
                                 <div>
-                                    <p href="#" class="hyperlink">Learn More</p>
+                                    <p href="#" class="hyperlink">CTO</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div style="min-width: 50%">
-                            <div class="service-card">
-                                <div class="image"
-                                    style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
-                                    <div style="display:list-item; position: relative;" class="floater">
-                                        <div class="iphone-x" style="transform: scale(0.75) translatey(30%);">
-                                            <i>Speaker</i>
-                                            <b>Camera</b>
-                                            <s>10:24</s>
-
-                                            <span>Left action button</span>
-                                            <span>Right action button</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3>DApp Development</h3>
-                                <div>
-                                    <p href="#" class="hyperlink">Learn More</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="min-width: 50%">
-                            <div class="service-card">
-                                <div class="image"
-                                    style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
-                                    <div style="display:list-item; position: relative;" class="floater">
-                                        <div class="iphone-x" style="transform: scale(0.75) translatey(30%);">
-                                            <i>Speaker</i>
-                                            <b>Camera</b>
-                                            <s>10:24</s>
-
-                                            <span>Left action button</span>
-                                            <span>Right action button</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3>DApp Development</h3>
-                                <div>
-                                    <p href="#" class="hyperlink">Learn More</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="min-width: 50%">
-                            <div class="service-card">
-                                <div class="image"
-                                    style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
-                                    <div style="display:list-item; position: relative;" class="floater">
-                                        <div class="iphone-x" style="transform: scale(0.75) translatey(30%);">
-                                            <i>Speaker</i>
-                                            <b>Camera</b>
-                                            <s>10:24</s>
-
-                                            <span>Left action button</span>
-                                            <span>Right action button</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3>DApp Development</h3>
-                                <div>
-                                    <p href="#" class="hyperlink">Learn More</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-            </div>
-
-            <div id="who-we-are" class="about container card-wrapper" style="margin:0 0;">
-                <h2>Who We Are</h2>
-                <p>Brief description of the company’s mission, vision, and values.</p>
-                <div class="card-container">
-                    <div class="swiper-animation-top" style="min-width: 50%">
-                        <div class="team-member">
-                            <div class="image"
-                                style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
-                                <div style="display:list-item; position: relative;" class="floater">
-                                    <div class="iphone-x" style="transform: scale(0.75) translateY(30%);">
-                                        <i>Speaker</i>
-                                        <b>Camera</b>
-                                        <s>10:24</s>
-
-                                        <span>Left action button</span>
-                                        <span>Right action button</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <h3>John Doe</h3>
-                            <div>
-                                <p href="#" class="hyperlink">CEO</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-animation-bottom" style="min-width: 50%">
-                        <div class="team-member">
-                            <div class="image"
-                                style="display:flex; flex-direction: row; align-items: center; justify-content: space-evenly; overflow-y: hidden;">
-                                <div style="display:list-item; position: relative;" class="floater">
-                                    <div id="square" style="margin:20px 0;"></div>
-                                    <div id="square" style="margin:20px 0;"></div>
-                                    <div id="square" style="margin:20px 0;"></div>
-                                    <div id="square" style="margin:20px 0;"></div>
-                                </div>
-                                <div style="display:list-item; position: relative; transform: translateY(20%);"
-                                    class="floaterReverse">
-                                    <div id="square" style="margin:20px 0;"></div>
-                                    <div id="square" style="margin:20px 0;"></div>
-                                    <div id="square" style="margin:20px 0;"></div>
-                                    <div id="square" style="margin:20px 0;"></div>
-                                </div>
-                                <div style="display:list-item; position: relative;" class="floater">
-                                    <div id="square" style="margin:20px 0;"></div>
-                                    <div id="square" style="margin:20px 0;"></div>
-                                    <div id="square" style="margin:20px 0;"></div>
-                                    <div id="square" style="margin:20px 0;"></div>
-                                </div>
-                            </div>
-                            <h3>Jane Smith</h3>
-                            <div>
-                                <p href="#" class="hyperlink">CTO</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="work" class="portfolio container card-wrapper" style="margin:0 0;">
-                <h2>Our Work</h2>
-                <div class="card-container">
-                    <div class="swiper-animation-top" style="min-width: 50%">
-                        <div class="project">
-                            <div class="image"
-                                style="display:flex; flex-direction: row; align-items: center; justify-content: space-evenly; overflow-y: hidden;">
-                                <div style="display:list-item; position: relative; transform: translateY(-30%);"
-                                    class="floater">
-                                    <div id="circle" style="margin:20px 0;"></div>
-                                    <div id="circle" style="margin:20px 0;"></div>
-                                    <div id="circle" style="margin:20px 0;"></div>
-                                    <div id="circle" style="margin:20px 0;"></div>
-                                </div>
-                                <div style="display:list-item; position: relative; transform: translateY(50%);"
-                                    class="floaterReverse">
-                                    <div id="circle" style="margin:20px 0;"></div>
-                                    <div id="circle" style="margin:20px 0;"></div>
-                                    <div id="circle" style="margin:20px 0;"></div>
-                                    <div id="circle" style="margin:20px 0;"></div>
-                                </div>
-                                <div style="display:list-item; position: relative; transform: translateY(-30%);"
-                                    class="floater">
-                                    <div id="circle" style="margin:20px 0;"></div>
-                                    <div id="circle" style="margin:20px 0;"></div>
-                                    <div id="circle" style="margin:20px 0;"></div>
-                                    <div id="circle" style="margin:20px 0;"></div>
-                                </div>
-                            </div>
-                            <h3>Project One</h3>
-                            <div>
-                                <p href="#" class="hyperlink">Short description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-animation-bottom" style="min-width: 50%">
-                        <div class="project">
-                            <div class="image"
-                                style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
-                                <div style="display:list-item; position: relative;" class="floater">
-                                    <div class="iphone-x" style="transform: scale(0.75) translateY(30%);">
-                                        <i>Speaker</i>
-                                        <b>Camera</b>
-                                        <s>10:24</s>
-
-                                        <span>Left action button</span>
-                                        <span>Right action button</span>
+                <div id="work" class="portfolio container card-wrapper" style="margin:0 0;">
+                    <h2>Our Work</h2>
+                    <div class="card-container">
+                        <div class="swiper-animation-top" style="min-width: 50%">
+                            <div class="project">
+                                <div class="image"
+                                    style="display:flex; flex-direction: row; align-items: center; justify-content: space-evenly; overflow-y: hidden;">
+                                    <div style="display:list-item; position: relative; transform: translateY(-30%);"
+                                        class="floater">
+                                        <div id="circle" style="margin:20px 0;"></div>
+                                        <div id="circle" style="margin:20px 0;"></div>
+                                        <div id="circle" style="margin:20px 0;"></div>
+                                        <div id="circle" style="margin:20px 0;"></div>
+                                    </div>
+                                    <div style="display:list-item; position: relative; transform: translateY(50%);"
+                                        class="floaterReverse">
+                                        <div id="circle" style="margin:20px 0;"></div>
+                                        <div id="circle" style="margin:20px 0;"></div>
+                                        <div id="circle" style="margin:20px 0;"></div>
+                                        <div id="circle" style="margin:20px 0;"></div>
+                                    </div>
+                                    <div style="display:list-item; position: relative; transform: translateY(-30%);"
+                                        class="floater">
+                                        <div id="circle" style="margin:20px 0;"></div>
+                                        <div id="circle" style="margin:20px 0;"></div>
+                                        <div id="circle" style="margin:20px 0;"></div>
+                                        <div id="circle" style="margin:20px 0;"></div>
                                     </div>
                                 </div>
+                                <h3>Project One</h3>
+                                <div>
+                                    <p href="#" class="hyperlink">Short description</p>
+                                </div>
                             </div>
-                            <h3>Project Two</h3>
-                            <div>
-                                <p href="#" class="hyperlink">Short description</p>
+                        </div>
+                        <div class="swiper-animation-bottom" style="min-width: 50%">
+                            <div class="project">
+                                <div class="image"
+                                    style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
+                                    <div style="display:list-item; position: relative;" class="floater">
+                                        <div class="iphone-x" style="transform: scale(0.75) translateY(30%);">
+                                            <i>Speaker</i>
+                                            <b>Camera</b>
+                                            <s>10:24</s>
+
+                                            <span>Left action button</span>
+                                            <span>Right action button</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>Project Two</h3>
+                                <div>
+                                    <p href="#" class="hyperlink">Short description</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="insight" class="blog container card-wrapper" style="margin:0 0;">
-                <h2>Insights & Resources</h2>
-                <div class="card-container">
-                    <div class="swiper-animation-top" style="min-width: 50%">
-                        <div class="post">
-                            <div class="image"
-                                style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
-                                <div style="display:list-item; position: relative;" class="floater">
-                                    <div class="iphone-x" style="transform: scale(0.75) translateY(0%);">
-                                        <i>Speaker</i>
-                                        <b>Camera</b>
-                                        <s>10:24</s>
+                <div id="insight" class="blog container card-wrapper" style="margin:0 0;">
+                    <h2>Insights & Resources</h2>
+                    <div class="card-container">
+                        <div class="swiper-animation-top" style="min-width: 50%">
+                            <div class="post">
+                                <div class="image"
+                                    style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
+                                    <div style="display:list-item; position: relative;" class="floater">
+                                        <div class="iphone-x" style="transform: scale(0.75) translateY(0%);">
+                                            <i>Speaker</i>
+                                            <b>Camera</b>
+                                            <s>10:24</s>
 
-                                        <span>Left action button</span>
-                                        <span>Right action button</span>
+                                            <span>Left action button</span>
+                                            <span>Right action button</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <h3>Blog Post One</h3>
-                            <div>
-                                <p href="#" class="hyperlink">Teaser of recent article</p>
+                                <h3>Blog Post One</h3>
+                                <div>
+                                    <p href="#" class="hyperlink">Teaser of recent article</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-animation-bottom" style="min-width: 50%">
-                        <div class="post">
-                            <div class="image"
-                                style="display:flex; flex-direction: row; align-items: center; justify-content: space-evenly; overflow-y: hidden;">
-                                <div style="display:list-item; position: relative; transform: translateY(-30%);"
-                                    class="floater">
-                                    <div id="triangle-down" style="margin:20px 0;"></div>
-                                    <div id="triangle-down" style="margin:20px 0;"></div>
-                                    <div id="triangle-down" style="margin:20px 0;"></div>
-                                    <div id="triangle-down" style="margin:20px 0;"></div>
+                        <div class="swiper-animation-bottom" style="min-width: 50%">
+                            <div class="post">
+                                <div class="image"
+                                    style="display:flex; flex-direction: row; align-items: center; justify-content: space-evenly; overflow-y: hidden;">
+                                    <div style="display:list-item; position: relative; transform: translateY(-30%);"
+                                        class="floater">
+                                        <div id="triangle-down" style="margin:20px 0;"></div>
+                                        <div id="triangle-down" style="margin:20px 0;"></div>
+                                        <div id="triangle-down" style="margin:20px 0;"></div>
+                                        <div id="triangle-down" style="margin:20px 0;"></div>
+                                    </div>
+                                    <div style="display:list-item; position: relative; transform: translateY(60%);"
+                                        class="floaterReverse">
+                                        <div id="triangle-down" style="margin:20px 0;"></div>
+                                        <div id="triangle-down" style="margin:20px 0;"></div>
+                                        <div id="triangle-down" style="margin:20px 0;"></div>
+                                        <div id="triangle-down" style="margin:20px 0;"></div>
+                                    </div>
+                                    <div style="display:list-item; position: relative; transform: translateY(-30%);"
+                                        class="floater">
+                                        <div id="triangle-down" style="margin:20px 0;"></div>
+                                        <div id="triangle-down" style="margin:20px 0;"></div>
+                                        <div id="triangle-down" style="margin:20px 0;"></div>
+                                        <div id="triangle-down" style="margin:20px 0;"></div>
+                                    </div>
                                 </div>
-                                <div style="display:list-item; position: relative; transform: translateY(60%);"
-                                    class="floaterReverse">
-                                    <div id="triangle-down" style="margin:20px 0;"></div>
-                                    <div id="triangle-down" style="margin:20px 0;"></div>
-                                    <div id="triangle-down" style="margin:20px 0;"></div>
-                                    <div id="triangle-down" style="margin:20px 0;"></div>
+                                <h3>Blog Post Two</h3>
+                                <div>
+                                    <p href="#" class="hyperlink">Teaser of recent article</p>
                                 </div>
-                                <div style="display:list-item; position: relative; transform: translateY(-30%);"
-                                    class="floater">
-                                    <div id="triangle-down" style="margin:20px 0;"></div>
-                                    <div id="triangle-down" style="margin:20px 0;"></div>
-                                    <div id="triangle-down" style="margin:20px 0;"></div>
-                                    <div id="triangle-down" style="margin:20px 0;"></div>
-                                </div>
-                            </div>
-                            <h3>Blog Post Two</h3>
-                            <div>
-                                <p href="#" class="hyperlink">Teaser of recent article</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </section>
         </section>
-    </section>
-    <section id="FAQ">
-
-    </section>
+        <hr style="margin:0 50px;">
+        <section id="FAQ">
+            
+            <div id="faq-title-block">
+                <h1>FAQ</h1>
+                <p>Blockchain development services with P.H.</p>
+            </div>
+            <div id="faq-list-block">
+                <div class="faq-item">
+                    <h3>Q: What blockchain development services do we offer?</h3>
+                    <button>+</button>
+                    <div class="faq-content">
+                        <p>We offer a range of blockchain development services including smart contract development, blockchain consulting, and more.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: What blockchain development tech stack do we use?</h3>
+                    <button>+</button>
+                    <div class="faq-content">
+                        <p>We use a variety of tech stacks including Ethereum, Hyperledger, and more to develop robust blockchain solutions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: What blockchains can we build on?</h3>
+                    <button>+</button>
+                    <div class="faq-content">
+                        <p>We can build on multiple blockchains including Ethereum, Binance Smart Chain, Polkadot, and more.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: Do we develop our own blockchain tools?</h3>
+                    <button>+</button>
+                    <div class="faq-content">
+                        <p>Yes, we develop our own blockchain tools to streamline development processes and ensure high-quality results.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: How do we find the best blockchain developers?</h3>
+                    <button>+</button>
+                    <div class="faq-content">
+                        <p>We have a rigorous hiring process to find and hire the best blockchain developers with proven expertise.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: What does our development process look like?</h3>
+                    <button>+</button>
+                    <div class="faq-content">
+                        <p>Our development process includes initial consultation, planning, development, testing, and deployment.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <hr style="margin:0 50px;">
     </section>
     <!-- Footer -->
 
@@ -711,6 +763,7 @@
     <script src="assets/js/textScramble.js"></script>
     <script src="assets/js/parallaxScroll.js"></script>
     <script src="assets/js/dot cursor/dot-cursor.js"></script>
+    <script src="assets/js/FAQ.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".card"), {
             max: 15,

@@ -1,13 +1,14 @@
-html, body{
+html,
+body {
     scroll-behavior: smooth;
 }
-  
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background-color: rgb(27,32,48);
+    background-color: rgb(27, 32, 48);
     z-index: -1;
     position: relative;
 }
@@ -65,12 +66,12 @@ header .logo.shrink {
     transform: scale(0.6);
 }
 
-.nav{
+.nav {
     font-size: large;
     transition: all 0.3s ease-in-out;
 }
 
-.nav.shrink{
+.nav.shrink {
     transform: scale(0.85);
 }
 
@@ -107,7 +108,7 @@ nav ul li a.active {
     background-color: #a254c6;
 }
 
-button{
+button {
     font-family: "Kanit";
     font-size: 16px;
     font-weight: 400;
@@ -115,7 +116,7 @@ button{
     text-transform: uppercase;
 }
 
-.hyperlink{
+.hyperlink {
     position: relative;
     text-decoration: none;
     display: inline-block;
@@ -123,7 +124,7 @@ button{
 }
 
 .hyperlink::before {
-    
+
     content: '';
     position: absolute;
     width: 100%;
@@ -135,12 +136,12 @@ button{
     transform-origin: right;
     transform: scaleX(0);
     transition: transform .3s ease-in-out;
-  }
-  
+}
+
 .hyperlink:hover::before {
     transform-origin: left;
     transform: scaleX(1);
-  }
+}
 
 .cta-button {
     background-color: #a254c6;
@@ -153,7 +154,7 @@ button{
     z-index: 1;
 }
 
-.cta-button.shrink{
+.cta-button.shrink {
     padding: 10px 30px;
     font-size: small;
 }
@@ -197,7 +198,7 @@ button{
     pointer-events: none; 
 }  */
 
-.hero_overlay{
+.hero_overlay {
     content: '';
     position: absolute;
     top: 0;
@@ -207,7 +208,8 @@ button{
     background: #1b2030;
     opacity: 0;
     transition: opacity 0.1s ease-out;
-    pointer-events: none; /* Ensure it doesn't block interactions */
+    pointer-events: none;
+    /* Ensure it doesn't block interactions */
     z-index: -2;
 }
 
@@ -243,6 +245,17 @@ button{
     align-items: center;
     justify-content: space-between;
     padding: 30vh 20px;
+    margin: 10vh 0;
+}
+
+.banner-wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+    z-index: -2;
 }
 
 .hero .headline {
@@ -264,7 +277,8 @@ button{
     justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
-    right:10%;
+    right: 10%;
+    z-index: 1;
 }
 
 .landing-container {
@@ -280,7 +294,7 @@ button{
 }
 
 .landing-container {
-    
+
     /* transform-origin: center center;
     opacity: calc(var(--opacity-min) + (var(--opacity-max) - var(--opacity-min)) * var(--scroll-index) * 2);
     transform: scale(calc(var(--scale-min) + (var(--scale-max) - var(--scale-min)) * var(--scroll-index)))
@@ -313,11 +327,13 @@ button{
     position: relative;
     height: 60px;
 }
+
 .info-icon {
     width: 29px;
     position: relative;
     height: 29px;
 }
+
 .row-1 {
     align-self: stretch;
     display: flex;
@@ -325,13 +341,16 @@ button{
     align-items: flex-start;
     justify-content: space-between;
 }
+
 .address {
     position: relative;
 }
+
 .etheruem {
     position: relative;
     font-size: 24px;
 }
+
 .eth-parent {
     display: flex;
     flex-direction: column;
@@ -339,6 +358,7 @@ button{
     justify-content: flex-end;
     font-size: 36px;
 }
+
 .col-1 {
     display: flex;
     flex-direction: column;
@@ -346,15 +366,18 @@ button{
     justify-content: flex-end;
     gap: 10px;
 }
+
 .div {
     align-self: stretch;
     position: relative;
 }
+
 .eth1 {
     align-self: stretch;
     position: relative;
     font-size: 24px;
 }
+
 .col-2 {
     height: 85px;
     display: flex;
@@ -364,6 +387,7 @@ button{
     text-align: right;
     font-size: 36px;
 }
+
 .row-2 {
     align-self: stretch;
     display: flex;
@@ -371,6 +395,7 @@ button{
     align-items: flex-end;
     justify-content: space-between;
 }
+
 .content-eth {
     align-self: stretch;
     height: 269px;
@@ -443,7 +468,8 @@ a {
     font-family: 'Kanit', sans-serif;
     font-weight: 400;
     word-wrap: break-word;
-    width: -webkit-fill-available;;
+    width: -webkit-fill-available;
+    ;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 10px;
@@ -519,7 +545,7 @@ a {
     transition: all .5s;
 }
 
-.sidebar-navigation li.active{
+.sidebar-navigation li.active {
     background-color: #a254c6;
 }
 
@@ -541,8 +567,8 @@ a {
 }
 
 
-.image{
-    height: -webkit-fill-available; 
+.image {
+    height: -webkit-fill-available;
     background-color: #ddd;
 }
 
@@ -552,11 +578,12 @@ a {
     overflow: hidden;
 }
 
-.card-container h3, .card-container p{
+.card-container h3,
+.card-container p {
     margin-left: 10px;
 }
 
-.card-container{
+.card-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -567,7 +594,7 @@ a {
 .services,
 .about,
 .portfolio,
-.blog{
+.blog {
     padding: 50px 0;
     text-align: left;
 }
@@ -593,7 +620,7 @@ a {
     padding: 20px;
     border-radius: 10px;
     margin: 0 15px 0 0;
-    
+
 }
 
 .contact form input,
@@ -650,7 +677,7 @@ form h2.hovered {
     gap: 15px;
     list-style: none;
     padding: 0;
-    
+
 }
 
 .footer-nav li a {
@@ -670,18 +697,18 @@ form h2.hovered {
     transition: all 0.5s ease-in-out;
 }
 
-.social-link:hover{
+.social-link:hover {
     opacity: 1;
 }
 
 /* slider styles*/
 
-.swiper-animation-top{
+.swiper-animation-top {
     z-index: 1;
     transition: transform 0.5s ease;
 }
 
-.swiper-animation-bottom{
+.swiper-animation-bottom {
     z-index: 0;
     transform: translateX(-300px) translateY(0);
     transition: transform 0.5s ease;
@@ -704,7 +731,8 @@ form h2.hovered {
     width: -webkit-fill-available;
 }
 
-.prev, .next {
+.prev,
+.next {
     background-color: transparent;
     color: white;
     position: absolute;
@@ -722,7 +750,8 @@ form h2.hovered {
     right: 0;
 }
 
-.prev.inactive, .next.inactive {
+.prev.inactive,
+.next.inactive {
     color: rgba(255, 255, 255, 0.5);
     cursor: auto;
 }
@@ -734,7 +763,7 @@ form h2.hovered {
     transform: translateX(-50%);
     display: flex;
     gap: 5px;
-    
+
 }
 
 .dash {
@@ -749,5 +778,3 @@ form h2.hovered {
 .dash.active {
     background-color: rgba(255, 255, 255, 1);
 }
-
-
