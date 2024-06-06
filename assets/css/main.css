@@ -1,8 +1,15 @@
+html, body{
+    scroll-behavior: smooth;
+}
+  
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: rgb(27, 32, 48);
+    scroll-behavior: smooth;
+    background-color: rgb(27,32,48);
+    z-index: -1;
+    position: relative;
 }
 
 .header-wrapper {
@@ -38,7 +45,7 @@ header {
 }
 
 header.shrink {
-    padding: 10px 20px;
+    padding: 0 20px;
 }
 
 header .container {
@@ -76,18 +83,20 @@ header .logo.shrink {
     width: 600px;
     align-items: center;
     padding: 0;
+    margin: .75em 0;
 }
 
 .container nav ul li {
-    display: inline;
+    display: inline-flex;
     flex: 1 0 30px;
-    text-align: center;
-    overflow: hidden;
+    text-align: left;
+    justify-content: space-around;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
+    padding: 8px;
 }
 
 /* nav ul li a:hover{
@@ -95,8 +104,7 @@ nav ul li a {
 } */
 
 nav ul li a.active {
-    color: #a254c6;
-    font-size: 24px;
+    background-color: #a254c6;
 }
 
 button{
@@ -163,7 +171,7 @@ button{
     text-align: left;
     padding: 20px 10%;
     background: linear-gradient(135deg, #1b1b36, #20295d);
-    height: 105vh;
+    height: 200vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -173,6 +181,34 @@ button{
     /* To position the background animation */
     overflow: hidden;
     /* To hide overflow from animation */
+    z-index: -2;
+}
+
+/* .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1b2030;
+    opacity: var(--hero-opacity, 0);
+    transition: opacity 0.1s ease-out;
+    pointer-events: none; 
+}  */
+
+.hero_overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1b2030;
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+    pointer-events: none; /* Ensure it doesn't block interactions */
+    z-index: -2;
 }
 
 .background-animation {
@@ -181,12 +217,12 @@ button{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: -1;
 }
 
 .dot {
     fill: rgba(255, 255, 255, 0.6);
-
+    z-index: 0;
 }
 
 @keyframes float {
@@ -199,13 +235,14 @@ button{
     }
 }
 
-
 .hero-content {
     flex: 1;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 20px;
+    flex-direction: row;
+    align-self: start;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30vh 20px;
 }
 
 .hero .headline {
@@ -221,14 +258,17 @@ button{
 }
 
 .eth-card {
+    position: fixed;
     flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
+    right:10%;
 }
 
 .landing-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,6 +277,15 @@ button{
     width: auto;
     height: 100%;
     transform: translateY(20px);
+}
+
+.landing-container {
+    
+    /* transform-origin: center center;
+    opacity: calc(var(--opacity-min) + (var(--opacity-max) - var(--opacity-min)) * var(--scroll-index) * 2);
+    transform: scale(calc(var(--scale-min) + (var(--scale-max) - var(--scale-min)) * var(--scroll-index)))
+                translateX(calc(var(--translate-min) + (var(--translate-max) - var(--translate-min)) * var(--scroll-index)));
+    z-index: calc(1 + 9 * var(--scroll-index)); */
 }
 
 .card {
@@ -333,7 +382,8 @@ button{
 
 .form-container {
     height: 400px;
-    padding: 20px 24px;
+    width: 527px;
+    padding: 20px 0;
     background: rgba(197, 197, 197, 0.1);
     border-radius: 20px;
     overflow: hidden;
@@ -350,11 +400,12 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 21px;
+    gap: 20px;
+    width: 90%;
 }
 
 .input-group {
-    width: 478px;
+    width: -webkit-fill-available;
     padding: 15px 24px;
     background: rgba(162, 162, 162, 0.30);
     border-radius: 10px;
@@ -362,7 +413,6 @@ button{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
 }
 
 input {
@@ -393,7 +443,7 @@ a {
     font-family: 'Kanit', sans-serif;
     font-weight: 400;
     word-wrap: break-word;
-    width: 478px;
+    width: -webkit-fill-available;;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 10px;
@@ -430,13 +480,16 @@ a {
     display: flex;
     width: 80%;
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 .main-content nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    width: 15vw;
     padding: 40px 0;
+    top: 140px;
 }
 
 .main-content nav ul li {
@@ -451,16 +504,23 @@ a {
     /* Adjust based on your layout */
     list-style: none;
     padding: 40px 0px;
-    margin: 100px 60px;
-    width: 240px;
+    margin: 100px 5vw 0 0;
     /* Adjust based on your layout */
     flex-direction: column;
     border-top: 0.1em solid;
+    line-height: 1.5;
 }
 
 .sidebar-navigation li {
+    padding: 8px 5px 5px 5px;
     margin-bottom: 10px;
-    
+    border-radius: 8px;
+    width: -webkit-fill-available;
+    transition: all .5s;
+}
+
+.sidebar-navigation li.active{
+    background-color: #a254c6;
 }
 
 .sidebar-navigation a {
@@ -470,12 +530,14 @@ a {
     transition-duration: 1s;
 }
 
-.content-sections {
+.content-section {
     flex: 5;
     /* Flex for 1:5 ratio */
     width: 70%;
     position: relative;
-    
+    padding-right: 20px;
+    scroll-behavior: smooth;
+    top: 80px;
 }
 
 
@@ -505,8 +567,7 @@ a {
 .services,
 .about,
 .portfolio,
-.blog,
-.footer {
+.blog{
     padding: 50px 0;
     text-align: left;
 }
@@ -574,9 +635,7 @@ form h2.hovered {
     background-color: #303549;
     color: white;
     text-align: center;
-    padding: 40px 0;
-    margin: 0 0 -20px 0;
-    height: 35vh;
+    margin: 30vh 0 -20px 0;
 }
 
 .footer .container {
@@ -598,10 +657,21 @@ form h2.hovered {
     text-decoration: none;
     color: #fff;
     transition: all .3s;
+    line-height: 1.5;
 }
 
 .footer-nav li a:hover {
     color: #a254c6;
+}
+
+.social-link {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+
+.social-link:hover{
+    opacity: 1;
 }
 
 /* slider styles*/

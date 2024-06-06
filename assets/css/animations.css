@@ -15,15 +15,31 @@
 
 .card-wrapper {
     opacity: 0;
-    /*transform: translateY(0px);*/
-    transition: opacity 1s ease-out, transform 1s ease-out;
-    
+    transform: translateY(0px);
+    transition: opacity 1s, transform 1s;
 }
 
 .card-wrapper.visible {
     opacity: 1;
-    /*transform: translateY(0);*/
+    transition: opacity 1s, transform 1s;
 }
+
+.card-wrapper.down.visible {
+    transform: translateY(-30px);
+}
+
+.card-wrapper.down.invisible {
+  transform: translateY(-60px);
+}
+
+.card-wrapper.up.visible {
+    transform: translateY(30px);
+}
+
+.card-wrapper.up.invisible {
+  transform: translateY(60px);
+}
+
 
 /* @keyframes bg-color-change {
   0% {
