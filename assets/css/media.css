@@ -32,7 +32,7 @@
     position: relative;
     height: -webkit-fill-available;
     display: flex;
-    font-family: Manrope;
+    font-family: "Manrope";
 }
 
 .fictional-logo-child {
