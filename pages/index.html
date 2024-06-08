@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page by JT</title>
+    <title>Static Page by JT</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/media.css">
-    <link rel="stylesheet" href="assets/css/shapes.css">
-    <link rel="stylesheet" href="assets/css/logo.css">
-    <link rel="stylesheet" href="assets/css/dot cursor/dot-cursor.css">
-    <link rel="stylesheet" href="assets/css/FAQ.css">
+
+    <script>document.documentElement.classList.add('js')</script>
+
+    <link href="../assets/css/tailwind/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+    <link rel="stylesheet" href="../assets/css/shapes.css">
+    <link rel="stylesheet" href="../assets/css/logo.css">
+    <link rel="stylesheet" href="../assets/css/dot cursor/dot-cursor.css">
+    <link rel="stylesheet" href="../assets/css/FAQ.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -27,45 +32,97 @@
 
 <body>
     <div class="header-wrapper" id="outerHeader">
-        <header class="container">
-            <div class="logo">
-                <img class="website-logo-svg" style="transform: scale(1);" alt="LOGO" src="assets/images/logo.svg">
+        <header class="container max-md:justify-around max-md:!pl-0">
+            <div class="logo max-md:!hidden">
+                <img class="website-logo-svg" style="transform: scale(1);" alt="LOGO" src="../assets/images/logo.svg">
             </div>
-            <nav class="nav" data-text-scramble>
+
+
+
+            <nav class="nav hidden md:block" data-text-scramble>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#" target="_self">Home</a></li>
+                    <li><a href="pages/services.html">Services</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <button class="cta-button">Get Started</button>
+
+            <div class="logo-2-wrapper flex-col w-[100%] md:hidden">
+                <input id="toggle1" type="checkbox" />
+                <label class="logo2" for="toggle1">
+                    <div class="logo-box flex w-min">
+                        <div class="logo !size-8 cursor-pointer">
+                            <img class="website-logo-svg" style="transform: scale(1);" alt="LOGO"
+                                src="../assets/images/logo.svg">
+                        </div>
+                    </div>
+                </label>
+
+                <button class="cta-button hidden md:block">Get Started</button>
+                <nav class="menu1">
+                    <ul class="!flex-col !w-[100%] text-left !items-start font-bold !mt-5 ">
+                        <li
+                            class="flex w-[100%] my-1 rounded-md pl-3 py-1 !justify-start hover:bg-[#a254c6]/[1] transition duration-50">
+                            <mask><text class="p-0" href="#" target="_self">Home</text></mask>
+                        </li>
+                        <li
+                            class="flex w-[100%] my-1 rounded-md pl-3 py-1 !justify-start hover:bg-[#a254c6]/[1] transition duration-50">
+                            <mask><text class="p-0" href="pages/services.html">Services</a></mask>
+                        </li>
+                        <li
+                            class="flex w-[100%] my-1 rounded-md pl-3 py-1 !justify-start hover:bg-[#a254c6]/[1] transition duration-50">
+                            <mask><text class="p-0" href="#">About</text></mask>
+                        </li>
+                        <li
+                            class="flex w-[100%] my-1 rounded-md pl-3 py-1 !justify-start hover:bg-[#a254c6]/[1] transition duration-50">
+                            <mask><text class="p-0" href="#">Portfolio</text></mask>
+                        </li>
+                        <li
+                            class="flex w-[100%] my-1 rounded-md pl-3 py-1 !justify-start hover:bg-[#a254c6]/[1] transition duration-50">
+                            <mask><text class="p-0" href="#">Blog</text></mask>
+                        </li>
+                        <li
+                            class="flex w-[100%] my-1 rounded-md pl-3 py-1 !justify-start hover:bg-[#a254c6]/[1] transition duration-50">
+                            <mask><text class="p-0" href="#">Contact</text></mask>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
         </header>
+
     </div>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero max-md:flex-col">
         <div class="background-animation">
             <svg width="100%" height="100%" id="dots-container"></svg>
         </div>
         <div class="hero_overlay"></div>
-        <div class="hero-content">
+        <div class="hero-content max-md:!pt-[10vh]">
             <div class="banner-wrapper" style="z-index: 1;">
                 <div class="fadeInUp-animation">
-                    <div class="headline">Unlock the Potential of Web3</div>
-                    <div class="subheadline">Innovative blockchain solutions for your business</div>
-                    <button class="cta-button">Explore Services</button>
+                    <div class="headline">
+                        <p>Unlock the Potential of Web3</p>
+                    </div>
+                    <div class="subheadline">
+                        <p>Innovative blockchain solutions for your business</p>
+                    </div>
+                    <button class="cta-button">
+                        <p>Explore Services</p>
+                    </button>
                 </div>
             </div>
-            <div class="eth-card">
+            <div class="eth-card max-md:!hidden">
                 <div class="landing-container">
                     <div class="card fadeInUp-animation">
                         <div class="content-eth">
                             <div class="row-1">
-                                <img class="logo-eth-icon" alt="" src="assets/images/eth_icon.svg">
-                                <img class="info-icon" alt="" src="assets/images/info_icon.svg">
+                                <img class="logo-eth-icon" alt="" src="../assets/images/eth_icon.svg">
+                                <img class="info-icon" alt="" src="../assets/images/info_icon.svg">
                             </div>
                             <div class="row-2">
                                 <div class="col-1">
@@ -107,6 +164,54 @@
                 </div>
             </div>
         </div>
+
+        <div class="eth-card !absolute !pr-0 !pl-0 !right-auto top-[90vh] md:!hidden">
+            <div class="landing-container max-md:!scale-[0.65]">
+                <div class="card fadeInUp-animation !"">
+                    <div class=" content-eth">
+                    <div class="row-1">
+                        <img class="logo-eth-icon" alt="" src="../assets/images/eth_icon.svg">
+                        <img class="info-icon" alt="" src="../assets/images/info_icon.svg">
+                    </div>
+                    <div class="row-2">
+                        <div class="col-1">
+                            <div class="address">0xec2d42...21f82c5d</div>
+                            <div class="eth-parent">
+                                <div class="address">ETH</div>
+                                <div class="etheruem">Etheruem</div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="div">$1424.55</div>
+                            <div class="eth1">0.0371 ETH</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container fadeInUp-animation">
+                <div class="form-content">
+                    <div class="input-group">
+                        <input placeholder="Address to">
+                    </div>
+                    <div class="input-group">
+                        <input placeholder="Amount (ETH)">
+                    </div>
+                    <div class="input-group">
+                        <input placeholder="Keyword (GIF)">
+                    </div>
+                    <div class="input-group">
+                        <input placeholder="Enter Message">
+                    </div>
+                    <div class="divider"></div>
+                    <a class="button" href="#">Send now</a>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
     </section>
 
     <!-- Featured Media Section -->
@@ -114,7 +219,7 @@
         <div class="item-container">
 
             <div class="item-track">
-                <div class="item">
+                <div class="item max-md:scale-[0.7] max-md:!mx-0">
                     <div class="fictional-logo">
 
                         <div class="fictional-logo-child">
@@ -126,7 +231,7 @@
 
                     </div>
                 </div>
-                <div class="item">
+                <div class="item max-md:scale-[0.7] max-md:!mx-0">
                     <div class="fictional-logo">
                         <div class="fictional-logo-child">
                         </div>
@@ -135,7 +240,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item max-md:scale-[0.7] max-md:!mx-0">
                     <div class="fictional-logo">
                         <div class="fictional-logo-child">
                         </div>
@@ -145,7 +250,7 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item max-md:scale-[0.7] max-md:!mx-0">
                     <div class="fictional-logo">
 
                         <div class="fictional-logo-child">
@@ -157,7 +262,7 @@
 
                     </div>
                 </div>
-                <div class="item">
+                <div class="item max-md:scale-[0.7] max-md:!mx-0">
                     <div class="fictional-logo">
                         <div class="fictional-logo-child">
                         </div>
@@ -166,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item max-md:scale-[0.7] max-md:!mx-0">
                     <div class="fictional-logo">
                         <div class="fictional-logo-child">
                         </div>
@@ -176,7 +281,7 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item max-md:scale-[0.7] max-md:!mx-0">
                     <div class="fictional-logo">
 
                         <div class="fictional-logo-child">
@@ -188,7 +293,7 @@
 
                     </div>
                 </div>
-                <div class="item">
+                <div class="item max-md:scale-[0.7] max-md:!mx-0">
                     <div class="fictional-logo">
                         <div class="fictional-logo-child">
                         </div>
@@ -197,7 +302,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item max-md:scale-[0.7] max-md:!mx-0">
                     <div class="fictional-logo">
                         <div class="fictional-logo-child">
                         </div>
@@ -207,7 +312,7 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <div class="item max-md:scale-[0.7] max-md:!mx-0">
                     <div class="fictional-logo">
 
                         <div class="fictional-logo-child">
@@ -219,7 +324,7 @@
 
                     </div>
                 </div>
-                <div class="item">
+                <div class="item max-md:scale-[0.7] max-md:!mx-0">
                     <div class="fictional-logo">
                         <div class="fictional-logo-child">
                         </div>
@@ -228,7 +333,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item max-md:scale-[0.7] max-md:!mx-0">
                     <div class="fictional-logo">
                         <div class="fictional-logo-child">
                         </div>
@@ -246,9 +351,10 @@
 
     <!-- Content Section -->
     <section style="width: fill-content; background-color: rgb(27, 32, 48);">
-        <section class="main-content" style="color: white; background-color: rgb(27, 32, 48);margin-bottom: 25vh;">
+        <section class="main-content max-md:flex-col"
+            style="color: white; background-color: rgb(27, 32, 48);margin-bottom: 25vh;">
             <nav>
-                <ul class="sidebar-navigation">
+                <ul class="sidebar-navigation max-md:!hidden">
                     <li id="1"><a href="#services">Our Services</a></li>
                     <li id="2"><a href="#who-we-are">Who We Are</a></li>
                     <li id="3"><a href="#work">Our Work</a></li>
@@ -256,20 +362,21 @@
                 </ul>
             </nav>
 
-            <section class="content-section">
+            <section class="content-section max-md:!w-auto max-md:!pr-0">
 
-                <div id="services" class="services container card-wrapper" style="margin:0 0;">
+                <div id="services" class="services container card-wrapper max-md:!opacity-100 max-md:!visible"
+                    style="margin:0 0;">
                     <div style="display: flex; flex-direction: row; justify-content: space-between;">
                         <h2>Our Services</h2>
 
-                        <div id="slider-container"></div>
-                        <script src="assets/js/sliderUI.js"></script>
+                        <div class="flex max-md:!hidden" id="slider-container"></div>
+                        <script src="../assets/js/sliderUI.js"></script>
                     </div>
 
                     <div class="slider">
 
-                        <div class="card-container">
-                            <div class="swiper-animation-top" style="min-width: 50%">
+                        <div class="card-container max-md:overflow-x-scroll">
+                            <div class="swiper-animation-top max-md:!min-w-[100%]" style="min-width: 50%">
                                 <div class="service-card">
                                     <div class="image"
                                         style="display:flex; flex-direction: row; align-items: center; justify-content: space-evenly; overflow-y: hidden;">
@@ -298,7 +405,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-animation-bottom" style="min-width: 50%">
+                            <div class="swiper-animation-bottom max-md:!min-w-[100%]" style="min-width: 50%">
                                 <div class="service-card">
                                     <div class="image"
                                         style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
@@ -452,11 +559,12 @@
 
                 </div>
 
-                <div id="who-we-are" class="about container card-wrapper" style="margin:0 0;">
+                <div id="who-we-are" class="about container card-wrapper max-md:!opacity-100 max-md:!visible"
+                    style="margin:0 0;">
                     <h2>Who We Are</h2>
                     <p>Brief description of the company’s mission, vision, and values.</p>
-                    <div class="card-container">
-                        <div class="swiper-animation-top" style="min-width: 50%">
+                    <div class="card-container max-md:overflow-x-scroll">
+                        <div class="swiper-animation-top max-md:!min-w-[100%]" style="min-width: 50%">
                             <div class="team-member">
                                 <div class="image"
                                     style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
@@ -477,7 +585,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-animation-bottom" style="min-width: 50%">
+                        <div class="swiper-animation-bottom max-md:!min-w-[100%]" style="min-width: 50%">
                             <div class="team-member">
                                 <div class="image"
                                     style="display:flex; flex-direction: row; align-items: center; justify-content: space-evenly; overflow-y: hidden;">
@@ -510,10 +618,11 @@
                     </div>
                 </div>
 
-                <div id="work" class="portfolio container card-wrapper" style="margin:0 0;">
+                <div id="work" class="portfolio container card-wrapper max-md:!opacity-100 max-md:!visible"
+                    style="margin:0 0;">
                     <h2>Our Work</h2>
-                    <div class="card-container">
-                        <div class="swiper-animation-top" style="min-width: 50%">
+                    <div class="card-container max-md:overflow-x-scroll">
+                        <div class="swiper-animation-top max-md:!min-w-[100%]" style="min-width: 50%">
                             <div class="project">
                                 <div class="image"
                                     style="display:flex; flex-direction: row; align-items: center; justify-content: space-evenly; overflow-y: hidden;">
@@ -545,7 +654,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-animation-bottom" style="min-width: 50%">
+                        <div class="swiper-animation-bottom max-md:!min-w-[100%]" style="min-width: 50%">
                             <div class="project">
                                 <div class="image"
                                     style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
@@ -569,10 +678,11 @@
                     </div>
                 </div>
 
-                <div id="insight" class="blog container card-wrapper" style="margin:0 0;">
+                <div id="insight" class="blog container card-wrapper max-md:!opacity-100 max-md:!visible"
+                    style="margin:0 0;">
                     <h2>Insights & Resources</h2>
-                    <div class="card-container">
-                        <div class="swiper-animation-top" style="min-width: 50%">
+                    <div class="card-container max-md:overflow-x-scroll">
+                        <div class="swiper-animation-top max-md:!min-w-[100%]" style="min-width: 50%">
                             <div class="post">
                                 <div class="image"
                                     style="display:flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: hidden;">
@@ -593,7 +703,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-animation-bottom" style="min-width: 50%">
+                        <div class="swiper-animation-bottom max-md:!min-w-[100%]" style="min-width: 50%">
                             <div class="post">
                                 <div class="image"
                                     style="display:flex; flex-direction: row; align-items: center; justify-content: space-evenly; overflow-y: hidden;">
@@ -631,69 +741,73 @@
             </section>
         </section>
         <hr style="margin:0 50px;">
-        <section id="FAQ">
-            
-            <div id="faq-title-block">
+        <section id="FAQ" class="flex-col">
+
+            <div id="faq-title-block" class="max-md:!w-full">
                 <h1>FAQ</h1>
                 <p>Blockchain development services with P.H.</p>
             </div>
-            <div id="faq-list-block">
+            <div id="faq-list-block" class="max-md:!w-full">
                 <div class="faq-item">
-                    <h3>Q: What blockchain development services do we offer?</h3>
+                    <h3 class="pr-[2em]">Q: What blockchain development services do we offer?</h3>
                     <button>+</button>
                     <div class="faq-content">
-                        <p>We offer a range of blockchain development services including smart contract development, blockchain consulting, and more.</p>
+                        <p>We offer a range of blockchain development services including smart contract development,
+                            blockchain consulting, and more.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <h3>Q: What blockchain development tech stack do we use?</h3>
+                    <h3 class="pr-[2em]">Q: What blockchain development tech stack do we use?</h3>
                     <button>+</button>
                     <div class="faq-content">
-                        <p>We use a variety of tech stacks including Ethereum, Hyperledger, and more to develop robust blockchain solutions.</p>
+                        <p>We use a variety of tech stacks including Ethereum, Hyperledger, and more to develop robust
+                            blockchain solutions.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <h3>Q: What blockchains can we build on?</h3>
+                    <h3 class="pr-[2em]">Q: What blockchains can we build on?</h3>
                     <button>+</button>
                     <div class="faq-content">
-                        <p>We can build on multiple blockchains including Ethereum, Binance Smart Chain, Polkadot, and more.</p>
+                        <p>We can build on multiple blockchains including Ethereum, Binance Smart Chain, Polkadot, and
+                            more.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <h3>Q: Do we develop our own blockchain tools?</h3>
+                    <h3 class="pr-[2em]">Q: Do we develop our own blockchain tools?</h3>
                     <button>+</button>
                     <div class="faq-content">
-                        <p>Yes, we develop our own blockchain tools to streamline development processes and ensure high-quality results.</p>
+                        <p>Yes, we develop our own blockchain tools to streamline development processes and ensure
+                            high-quality results.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <h3>Q: How do we find the best blockchain developers?</h3>
+                    <h3 class="pr-[2em]">Q: How do we find the best blockchain developers?</h3>
                     <button>+</button>
                     <div class="faq-content">
-                        <p>We have a rigorous hiring process to find and hire the best blockchain developers with proven expertise.</p>
+                        <p>We have a rigorous hiring process to find and hire the best blockchain developers with proven
+                            expertise.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <h3>Q: What does our development process look like?</h3>
+                    <h3 class="pr-[2em]">Q: What does our development process look like?</h3>
                     <button>+</button>
                     <div class="faq-content">
-                        <p>Our development process includes initial consultation, planning, development, testing, and deployment.</p>
+                        <p>Our development process includes initial consultation, planning, development, testing, and
+                            deployment.</p>
                     </div>
                 </div>
             </div>
-            
+
         </section>
         <hr style="margin:0 50px;">
     </section>
     <!-- Footer -->
 
-
-
     <footer class="footer">
 
         <div style="background: rgb(41, 46, 65); height: 20vh;">
-            <div class="contact container" style="padding: 0 120px; transform: translateY(-50%);">
-                <form style="gap: 1em;"">
+            <div class="contact container max-md:!p-0" style="padding: 0 120px; transform: translateY(-50%);">
+                <form style="gap: 1em;">
                     <h2 data-text=" form-title">Get In Touch</h2>
                     <!-- <input type="text" name="name" placeholder="Name" required> -->
                     <input type="email" name="email" placeholder="Email" required>
@@ -705,8 +819,22 @@
         </div>
 
         <div class="container" style="gap: 4vh; padding-top: 4vh;">
-            <div style="display:flex; flex-direction: row; width: 80%; justify-content:space-between;">
-                <nav>
+            <div class="max-md:!grid !grid-cols-2 max-md:!w-full"
+                style="display:flex; flex-direction: row; width: 80%; justify-content:space-between;">
+                <div class="!col-span-2 md:hidden -translate-y-4">
+                    <div class="flex !justify-center"
+                        style="display: flex; justify-content: flex-start; gap: 15px; padding: 15px 0;">
+                        <div class="social-link" id="circle" style="background-color: white; height:28px; width: 28px;">
+                        </div>
+                        <div class="social-link" id="circle" style="background-color: white; height:28px; width: 28px;">
+                        </div>
+                        <div class="social-link" id="circle" style="background-color: white; height:28px; width: 28px;">
+                        </div>
+                        <div class="social-link" id="circle" style="background-color: white; height:28px; width: 28px;">
+                        </div>
+                    </div>
+                </div>
+                <nav class="max-md:!w-[50%]">
                     <ul class="footer-nav"
                         style="display: flex; flex-direction: column; align-items: flex-start; width: fit-content; ">
                         <li><a href="#">Home</a></li>
@@ -715,7 +843,7 @@
                         <li><a href="#">Team</a></li>
                     </ul>
                 </nav>
-                <nav>
+                <nav class="max-md:!w-[50%]">
                     <ul class="footer-nav"
                         style="display: flex; flex-direction: column; align-items: flex-start; width: fit-content; ">
                         <li><a href="#">About</a></li>
@@ -724,14 +852,14 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <nav>
+                <nav class="max-md:!w-[100%]">
                     <ul class="footer-nav"
                         style="display: flex; flex-direction: column; align-items: flex-start; width: fit-content; ">
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
                     </ul>
                 </nav>
-                <div>
+                <div class="hidden md:block">
                     <div style="display: flex; justify-content: flex-start; gap: 15px; padding: 15px 0;">
                         <div class="social-link" id="circle" style="background-color: white; height:28px; width: 28px;">
                         </div>
@@ -754,15 +882,17 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/vanilla-tilt.js"></script>
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/slider.js"></script>
-    <script src="assets/js/swiper-animation.js"></script>
-    <script src="assets/js/textScramble.js"></script>
-    <script src="assets/js/parallaxScroll.js"></script>
-    <script src="assets/js/dot cursor/dot-cursor.js"></script>
-    <script src="assets/js/FAQ.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/vanilla-tilt.js"></script>
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/slider.js"></script>
+    <script src="../assets/js/swiper-animation.js"></script>
+    <script src="../assets/js/textScramble.js"></script>
+    <script src="../assets/js/parallaxScroll.js"></script>
+    <script src="../assets/js/dot cursor/dot-cursor.js"></script>
+    <script src="../assets/js/FAQ.js"></script>
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+
     <script>
         VanillaTilt.init(document.querySelectorAll(".card"), {
             max: 15,
