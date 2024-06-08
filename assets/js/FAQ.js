@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Open the clicked item
                 item.classList.add('active');
-                button.textContent = '-';
+                button.textContent = '×';
                 content.style.height = content.scrollHeight + 'px'; // Expand the content
                 content.style.opacity = 1; // Fade in
             }
