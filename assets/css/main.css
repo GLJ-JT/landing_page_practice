@@ -389,7 +389,7 @@ button {
     text-align: left;
     font-size: 16px;
     color: #fff;
-    font-family: Kanit;
+    font-family: "Kanit";
     animation-delay: 0.5s;
 }
 
@@ -517,7 +517,7 @@ input {
     width: 100%;
     color: rgba(255, 255, 255, 1);
     font-size: 18px;
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
     font-weight: 400;
     word-wrap: break-word;
 }
@@ -536,7 +536,7 @@ a {
 
 .button {
     font-size: 24px;
-    font-family: 'Kanit', sans-serif;
+    font-family: "Kanit", sans-serif;
     font-weight: 400;
     word-wrap: break-word;
     width: -webkit-fill-available;
