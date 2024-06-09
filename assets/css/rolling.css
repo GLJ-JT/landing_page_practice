@@ -1,13 +1,21 @@
 /* moving logos styles */
 
 .item-container {
-
     width: 100%;
     height: 20vh;
     display: flex;
     align-items: center;
     overflow-x: hidden;
     position: relative;
+}
+
+#container-mask{
+    background: linear-gradient(90deg, #1b2030, #1b203000 20%, #1b203000 80%, #1b2030);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 1;
 }
 
 .item-track {

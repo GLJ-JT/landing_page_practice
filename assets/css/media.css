@@ -4,4 +4,108 @@
         visibility: visible !important;
         transform: translateY(0px) !important;
     }
+
+    .hero-content {
+        padding: 10vh 0 !important;
+    }
+
+    .headline{
+        font-size: 2.8em !important;
+    }
+
+    .subheadline{
+        font-size: 1.5em !important;
+    }
+
+    .card {
+        width: 80vw;
+        height: auto;
+        aspect-ratio: 1.6;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .content-eth {
+        height: 100% !important;
+    }
+
+    .logo-eth-icon {
+        width: 2em;
+        height: auto;
+    }
+
+
+    .info-icon {
+        width: 1em;
+        height: auto;
+    }
+
+    .address {
+        font-size: 0.5em !important;
+
+    }
+
+    .eth-parent .address,
+    .div {
+        font-size: 0.5em !important;
+    }
+
+    .ethereum,
+    .eth1 {
+        font-size: 0.4em !important;
+    }
+
+
+
+
+    .form-container {
+        width: 80vw;
+        height: auto;
+        background: rgba(255, 255, 255, 0.1);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+
+    .input-group {
+        padding: 10px 15px;
+    }
+
+    .form-content .button {
+        font-size: 1em;
+    }
+
+    .content-section h2{
+        font-size: 2em;
+        line-height: 1.5;
+        padding: 2em 0 1em;
+    }
+
+    .content-section p{
+        font-size: 1em;
+        line-height: 1.5;
+        padding: 0 0 2em 0;
+    }
+
+    .content-section h3{
+        font-size: 1.5em;
+        padding-top: 1em;
+    }
+
+    .content-section .card-container p{
+        font-size: 1em;
+        line-height: 1.5;
+        padding: 1em 0 0.5em 0 !important;
+    }
+    
+
+    #faq-title-block {
+        padding-bottom: 3em;
+    }
+    #faq-title-block p{
+        font-size: 1.5em;
+    }
+
+    .footer a{
+        padding-left:0;
+    }
 }
