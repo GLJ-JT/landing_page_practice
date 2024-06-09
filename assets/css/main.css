@@ -2,7 +2,7 @@ html,
 body {
     scroll-behavior: smooth;
     width: 100vw;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
@@ -126,6 +126,10 @@ header .logo {
 header .logo.shrink {
     font-size: medium;
     transform: scale(0.6);
+}
+
+.logo-2-wrapper{
+    padding: 5px 0;
 }
 
 header .logo-2-wrapper .logobox .logo2 .shrink {
