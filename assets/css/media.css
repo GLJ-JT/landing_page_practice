@@ -1,4 +1,19 @@
 @media not all and (min-width: 768px) {
+    .container nav ul{
+        margin-top: 25px;
+        padding-top: 15px;
+        border-top: 2px solid white;
+    }
+
+    .menu1 {
+        position: static;
+        top:0;
+    }
+
+    .menu1 li{
+        padding-left: 0 !important;
+    }
+
     .card-wrapper {
         opacity: 1 !important;
         visibility: visible !important;
@@ -9,11 +24,11 @@
         padding: 10vh 0 !important;
     }
 
-    .headline{
+    .headline {
         font-size: 2.8em !important;
     }
 
-    .subheadline{
+    .subheadline {
         font-size: 1.5em !important;
     }
 
@@ -74,38 +89,77 @@
         font-size: 1em;
     }
 
-    .content-section h2{
+    .sidenav-wrapper {
+        top: 0;
+        position: sticky;
+        z-index: 3;
+        background-color: #1b2030;
+    }
+
+    .sidenav-wrapper nav {
+        top: 0;
+        position: sticky;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .sidebar-navigation {
+        width: 50vw !important;
+        border: 0.1em solid;
+        overflow: hidden;
+        padding: 0 !important;
+        height: 3em;
+    }
+
+    .sidebar-navigation li{
+        background-color: transparent !important;
+        visibility: hidden;
+        position: fixed;
+        text-align: center;
+    }
+
+    .sidebar-navigation li.active{
+        visibility: visible;
+        position: relative;
+    }
+
+    .content-section{
+        padding: 0 0 2em 0;
+    }
+
+    .content-section h2 {
         font-size: 2em;
         line-height: 1.5;
         padding: 2em 0 1em;
     }
 
-    .content-section p{
+    .content-section p {
         font-size: 1em;
         line-height: 1.5;
         padding: 0 0 2em 0;
     }
 
-    .content-section h3{
+    .content-section h3 {
         font-size: 1.5em;
         padding-top: 1em;
     }
 
-    .content-section .card-container p{
+    .content-section .card-container p {
         font-size: 1em;
         line-height: 1.5;
         padding: 1em 0 0.5em 0 !important;
     }
-    
+
 
     #faq-title-block {
         padding-bottom: 3em;
     }
-    #faq-title-block p{
+
+    #faq-title-block p {
         font-size: 1.5em;
     }
 
-    .footer a{
-        padding-left:0;
+    .footer a {
+        padding-left: 0;
     }
 }

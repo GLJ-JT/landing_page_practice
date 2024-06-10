@@ -600,6 +600,12 @@ a {
     align-items: center;
 }
 
+.sidenav-wrapper nav {
+    top: 140px;
+    position: sticky;
+    padding-bottom: 3em;
+}
+
 .sidebar-navigation {
     position: sticky;
     top: 100px;

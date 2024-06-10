@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Static Page by JT</title>
-  
+
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/dot cursor/dot-cursor.css">
     <link rel="stylesheet" href="assets/css/FAQ.css">
     <link rel="stylesheet" href="assets/css/media.css">
-    
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -66,7 +66,7 @@
 
                 <button class="cta-button hidden md:block">Get Started</button>
                 <nav class="menu1">
-                    <ul class="!flex-col !w-[100%] text-left !items-start font-bold !mt-5 ">
+                    <ul class="!flex-col !w-[100%] text-left !items-start font-bold">
                         <li
                             class="flex w-[100%] my-1 rounded-md pl-3 py-1 !justify-start hover:bg-[#a254c6]/[1] transition duration-50">
                             <mask><text class="p-0" href="#" target="_self">Home</text></mask>
@@ -172,46 +172,46 @@
             <div class="landing-container">
                 <div class="card fadeInUp-animation">
                     <div class=" content-eth">
-                    <div class="row-1">
-                        <img class="logo-eth-icon" alt="" src="assets/images/eth_icon.svg">
-                        <img class="info-icon" alt="" src="assets/images/info_icon.svg">
-                    </div>
-                    <div class="row-2">
-                        <div class="col-1">
-                            <div class="address">0xec2d42...21f82c5d</div>
-                            <div class="eth-parent">
-                                <div class="address">ETH</div>
-                                <div class="ethereum">ethereum</div>
+                        <div class="row-1">
+                            <img class="logo-eth-icon" alt="" src="assets/images/eth_icon.svg">
+                            <img class="info-icon" alt="" src="assets/images/info_icon.svg">
+                        </div>
+                        <div class="row-2">
+                            <div class="col-1">
+                                <div class="address">0xec2d42...21f82c5d</div>
+                                <div class="eth-parent">
+                                    <div class="address">ETH</div>
+                                    <div class="ethereum">ethereum</div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="div">$1424.55</div>
+                                <div class="eth1">0.0371 ETH</div>
                             </div>
                         </div>
-                        <div class="col-2">
-                            <div class="div">$1424.55</div>
-                            <div class="eth1">0.0371 ETH</div>
+                    </div>
+                </div>
+
+                <div class="form-container fadeInUp-animation">
+                    <div class="form-content">
+                        <div class="input-group">
+                            <input placeholder="Address to">
                         </div>
+                        <div class="input-group">
+                            <input placeholder="Amount (ETH)">
+                        </div>
+                        <div class="input-group">
+                            <input placeholder="Keyword (GIF)">
+                        </div>
+                        <div class="input-group">
+                            <input placeholder="Enter Message">
+                        </div>
+                        <div class="divider"></div>
+                        <a class="button" href="#">Send now</a>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-container fadeInUp-animation">
-                <div class="form-content">
-                    <div class="input-group">
-                        <input placeholder="Address to">
-                    </div>
-                    <div class="input-group">
-                        <input placeholder="Amount (ETH)">
-                    </div>
-                    <div class="input-group">
-                        <input placeholder="Keyword (GIF)">
-                    </div>
-                    <div class="input-group">
-                        <input placeholder="Enter Message">
-                    </div>
-                    <div class="divider"></div>
-                    <a class="button" href="#">Send now</a>
-                </div>
             </div>
-
-        </div>
         </div>
 
 
@@ -220,7 +220,7 @@
     <!-- Featured Media Section -->
     <section style="background-color: rgb(27, 32, 48);">
         <div class="item-container">
-        
+
 
             <div class="item-track">
                 <div class="item max-md:scale-[0.7] max-md:!mx-0">
@@ -351,22 +351,24 @@
             </div>
             <div id="container-mask"></div>
         </div>
-        
+
         <hr style="margin:0 50px;">
     </section>
 
     <!-- Content Section -->
-    <section style="width: fill-content; background-color: rgb(27, 32, 48);">
+    <section class="main" style="width: fill-content; background-color: rgb(27, 32, 48);">
         <section class="main-content max-md:flex-col"
             style="color: white; background-color: rgb(27, 32, 48);margin-bottom: 25vh;">
-            <nav>
-                <ul class="sidebar-navigation max-md:!hidden">
-                    <li id="1"><a href="#services">Our Services</a></li>
-                    <li id="2"><a href="#who-we-are">Who We Are</a></li>
-                    <li id="3"><a href="#work">Our Work</a></li>
-                    <li id="4"><a href="#insight">Insights & Resources</a></li>
-                </ul>
-            </nav>
+            <div class="sidenav-wrapper">
+                <nav>
+                    <ul class="sidebar-navigation">
+                        <li id="1"><a href="#services">Our Services</a></li>
+                        <li id="2"><a href="#who-we-are">Who We Are</a></li>
+                        <li id="3"><a href="#work">Our Work</a></li>
+                        <li id="4"><a href="#insight">Insights & Resources</a></li>
+                    </ul>
+                </nav>
+            </div>
 
             <section class="content-section max-md:!w-auto max-md:!pr-0">
 
@@ -828,8 +830,7 @@
             <div class="max-md:!grid !grid-cols-2 max-md:!w-full"
                 style="display:flex; flex-direction: row; width: 80%; justify-content:space-between;">
                 <div class="!col-span-2 md:hidden -translate-y-4">
-                    <div class="flex"
-                        style="display: flex; justify-content: flex-start; gap: 15px; padding: 15px 0;">
+                    <div class="flex" style="display: flex; justify-content: flex-start; gap: 15px; padding: 15px 0;">
                         <div class="social-link" id="circle" style="background-color: white; height:28px; width: 28px;">
                         </div>
                         <div class="social-link" id="circle" style="background-color: white; height:28px; width: 28px;">
@@ -883,7 +884,8 @@
 
 
             <div>
-                <p style="font-size: 12px; opacity: 0.5; line-height: 5em !important;">&copy; 2024 Web3 Service Agency. All rights reserved.</p>
+                <p style="font-size: 12px; opacity: 0.5; line-height: 5em !important;">&copy; 2024 Web3 Service Agency.
+                    All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -897,6 +899,7 @@
     <script src="assets/js/parallaxScroll.js"></script>
     <script src="assets/js/dot cursor/dot-cursor.js"></script>
     <script src="assets/js/FAQ.js"></script>
+    <script src="assets/js/sideNav.js"></script>
 
     <script>
         VanillaTilt.init(document.querySelectorAll(".card"), {
