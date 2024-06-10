@@ -1,6 +1,8 @@
 html,
 body {
     scroll-behavior: smooth;
+    width: 100vw;
+    overflow-x: clip;
 }
 
 body {
@@ -13,11 +15,71 @@ body {
     position: relative;
 }
 
+/*Hamburger*/
+
+.hamburger1 {
+    height: 45px;
+    margin: 10px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    z-index: 120;
+}
+
+.hamburger1 div {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+    display: none;
+}
+
+#toggle1:checked+.logo2 .logo-box{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    scale:inherit;
+    transition: all 1s ease;
+}
+
+#toggle1:checked~.menu1 {
+    height: 100vh;
+}
+
+/* Menu */
+.menu1 {
+    width: 100%;
+    background-color: transparent;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: 1fr repeat(4, 0.5fr);
+    grid-row-gap: 25px;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* Main header */
+
 .header-wrapper {
     position: fixed;
     top: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -64,6 +126,20 @@ header .logo {
 header .logo.shrink {
     font-size: medium;
     transform: scale(0.6);
+}
+
+.logo-2-wrapper{
+    padding: 5px 0;
+}
+
+header .logo-2-wrapper .logobox .logo2 .shrink {
+    font-size: medium;
+    transform: scale(0.4);
+    transform-origin: left;
+}
+
+header .logo-2-wrapper .logo2 .logo{
+    transition: all 1s ease;
 }
 
 .nav {
@@ -318,7 +394,7 @@ button {
     text-align: left;
     font-size: 16px;
     color: #fff;
-    font-family: "Kanit";
+    font-family: Kanit;
     animation-delay: 0.5s;
 }
 
@@ -406,7 +482,7 @@ button {
 }
 
 .form-container {
-    height: 400px;
+    height: auto;
     width: 527px;
     padding: 20px 0;
     background: rgba(197, 197, 197, 0.1);
@@ -524,6 +600,12 @@ a {
     align-items: center;
 }
 
+.sidenav-wrapper nav {
+    top: 140px;
+    position: sticky;
+    padding-bottom: 3em;
+}
+
 .sidebar-navigation {
     position: sticky;
     top: 100px;
@@ -566,6 +648,29 @@ a {
     top: 80px;
 }
 
+.content-section h2 {
+    font-size: 2em;
+    line-height: 1.5;
+    padding: 1em 0 0 0;
+}
+
+.content-section p {
+    font-size: 1.25em;
+    line-height: 1.5;
+    padding: 0;
+}
+
+.content-section h3 {
+    font-size: 1.5em;
+    padding-top: 1em;
+}
+
+.content-section .card-container p {
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 1em 0 0 0 !important;
+}
+
 
 .image {
     height: -webkit-fill-available;
@@ -589,6 +694,7 @@ a {
     justify-content: space-between;
     height: 28em;
     transition: all 1s ease-in-out;
+    padding-top: 1em;
 }
 
 .services,
@@ -736,7 +842,7 @@ form h2.hovered {
     background-color: transparent;
     color: white;
     position: absolute;
-    top: 15%;
+    top: 30%;
     border: none;
     cursor: pointer;
     z-index: 1000;

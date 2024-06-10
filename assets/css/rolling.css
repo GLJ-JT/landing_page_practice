@@ -1,0 +1,99 @@
+/* moving logos styles */
+
+.item-container {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#container-mask{
+    background: linear-gradient(90deg, #1b2030, #1b203000 20%, #1b203000 80%, #1b2030);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+
+.item-track {
+    display: flex;
+    animation: moveItems;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.item {
+    width: max-content;
+    padding-right: 50px;
+    height: 80px;
+    /* border: white 0.15em solid; */
+    border-radius: 10px;
+    margin: 0 30px;
+
+}
+
+.fictional-logo {
+    position: relative;
+    height: -webkit-fill-available;
+    display: flex;
+    font-family: "Manrope";
+}
+
+.fictional-logo-child {
+    position: relative;
+    align-self: center;
+    aspect-ratio: 1;
+    height: 60px;
+    border-radius: 999px;
+    background-color: #fff;
+    z-index: 0;
+}
+
+.text-wrapper {
+    margin-right: -80px;
+    font-family: "manrope";
+    position: relative;
+    transform: translateX(-30px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.text {
+    color: #d3d3d3;
+    font-size: 32px;
+    position: relative;
+}
+
+b::before{
+    content: attr(data-text);
+    font-size: 32px;
+    position: absolute;
+    color: #1b2030;
+    clip-path: circle(60px at -30px);
+}
+
+
+
+
+
+
+@keyframes moveItems {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* parallax scroll*/
+
+.floater {}
+.floaterReverse{}
