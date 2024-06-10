@@ -648,6 +648,29 @@ a {
     top: 80px;
 }
 
+.content-section h2 {
+    font-size: 2em;
+    line-height: 1.5;
+    padding: 1em 0 0 0;
+}
+
+.content-section p {
+    font-size: 1.25em;
+    line-height: 1.5;
+    padding: 0;
+}
+
+.content-section h3 {
+    font-size: 1.5em;
+    padding-top: 1em;
+}
+
+.content-section .card-container p {
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 1em 0 0 0 !important;
+}
+
 
 .image {
     height: -webkit-fill-available;
@@ -671,6 +694,7 @@ a {
     justify-content: space-between;
     height: 28em;
     transition: all 1s ease-in-out;
+    padding-top: 1em;
 }
 
 .services,
@@ -818,7 +842,7 @@ form h2.hovered {
     background-color: transparent;
     color: white;
     position: absolute;
-    top: -130%;
+    top: 30%;
     border: none;
     cursor: pointer;
     z-index: 1000;
